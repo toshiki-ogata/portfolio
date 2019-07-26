@@ -1,12 +1,11 @@
-<template>
-  <div>
-    <Header />
-    <Button />
-    <About />
-    <Project />
-    <Contact />
-    <Footer />
-  </div>
+<template lang="pug">
+  div
+    Header
+    Button
+    About
+    Project
+    Contact
+    Footer
 </template>
 
 <script>

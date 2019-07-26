@@ -1,7 +1,6 @@
-<template>
-  <div class="component">
-    content
-  </div>
+<template lang="pug">
+  div.component
+    p content
 </template>
 
 <style lang="scss" scoped>

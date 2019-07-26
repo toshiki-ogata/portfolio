@@ -1,7 +1,6 @@
-<template>
-  <div class="wrapper">
-    <nuxt />
-  </div>
+<template lang="pug">
+  div.wrapper
+    nuxt
 </template>
 
 <style lang="scss" scoped>
