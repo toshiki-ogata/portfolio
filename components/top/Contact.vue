@@ -1,11 +1,11 @@
 <template>
-  <div class="wrapper">
-    <nuxt />
+  <div class="component">
+    content
   </div>
 </template>
 
 <style lang="scss" scoped>
-.wrapper {
-  background: #0a192f;
+.component {
+  /* test */
 }
 </style>
