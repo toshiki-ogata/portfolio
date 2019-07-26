@@ -1,0 +1,14 @@
+{
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "extends": ["stylelint-config-standard", "stylelint-config-prettier"],
+  "ignoreFiles": ["./assets/scss/_global.scss"],
+  "rules": {
+    "at-rule-no-unknown": [true, {
+      "ignoreAtRules": ["function", "if", "for", "each", "include", "mixin"]
+    }],
+    "declaration-block-single-line-max-declarations": null,
+    "no-descending-specificity": null
+  }
+}

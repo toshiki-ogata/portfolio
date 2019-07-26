@@ -1,3 +1,5 @@
+const StylelintPlugin = require('stylelint-webpack-plugin')
+
 export default {
   mode: 'spa',
   /*
@@ -42,6 +44,14 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, { isDev, isClient }) {
+      if (isDev && isClient) {
+        config.plugins.push(
+          new StylelintPlugin({
+            files: ['**/*.vue', '**/*.scss']
+          })
+        )
+      }
+    }
   }
 }
