@@ -5,7 +5,9 @@
   "author": "toshiki ogata",
   "private": true,
   "scripts": {
-    "lint": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:pug & npm run lint:js",
+    "lint:pug": "pug-lint-vue ./**/*.vue",
+    "lint:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
     "test": "jest",
     "dev": "nuxt",
@@ -40,6 +42,7 @@
     "nodemon": "^1.18.9",
     "prettier": "^1.16.4",
     "pug": "^2.0.4",
+    "pug-lint-vue": "^0.3.0",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
     "stylelint": "^10.1.0",

@@ -1,4 +1,4 @@
-const StylelintPlugin = require('stylelint-webpack-plugin')
+import StylelintPlugin from 'stylelint-webpack-plugin'
 
 export default {
   mode: 'spa',
