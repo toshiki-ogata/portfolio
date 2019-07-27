@@ -12,12 +12,14 @@ html {
   box-sizing: border-box;
   overflow-y: scroll; /* All browsers without overlaying scrollbars */
   -webkit-text-size-adjust: 100%; /* iOS 8+ */
+  font-size: 62.5%;
 }
 
 body {
   font-family: $fontFamilyBase;
   color: $black;
   line-height: $lineHeight-md;
+  font-size: $fontSize-md;
 }
 
 *,
