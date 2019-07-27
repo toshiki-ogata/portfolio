@@ -8,7 +8,6 @@
     "lint": "npm run lint:pug & npm run lint:js",
     "lint:pug": "pug-lint-vue ./**/*.vue",
     "lint:js": "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
     "test": "jest",
     "dev": "nuxt",
     "build": "nuxt build",
@@ -37,7 +36,9 @@
     "eslint-plugin-promise": ">=4.0.1",
     "eslint-plugin-standard": ">=4.0.0",
     "eslint-plugin-vue": "^5.2.2",
+    "husky": "^3.0.1",
     "jest": "^24.1.0",
+    "lint-staged": "^9.2.1",
     "node-sass": "^4.12.0",
     "nodemon": "^1.18.9",
     "prettier": "^1.16.4",
@@ -51,5 +52,21 @@
     "stylelint-scss": "^3.9.2",
     "stylelint-webpack-plugin": "^0.10.5",
     "vue-jest": "^3.0.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,vue}": [
+      "eslint --fix --ext .js,.vue --ignore-path .gitignore .",
+      "git add"
+    ],
+    "*.vue": [
+      "stylelint --fix",
+      "pug-lint-vue",
+      "git add"
+    ]
   }
 }
