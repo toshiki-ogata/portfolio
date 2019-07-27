@@ -5,7 +5,7 @@
     About
     Project
     Contact
-    Footer
+        Footer
 </template>
 
 <script>
