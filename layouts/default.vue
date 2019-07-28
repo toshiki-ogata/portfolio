@@ -5,6 +5,6 @@
 
 <style lang="scss" scoped>
 .wrapper {
-  background: #0a192f;
+  background: $base;
 }
 </style>

@@ -1,15 +1,14 @@
 <template lang="pug">
   div
     Header
-    Button
-    About
-    Project
-    Contact
+    main.main
+      About
+      Project
+      Contact
     Footer
 </template>
 
 <script>
-import Button from '~/components/siteWide/Button.vue'
 import Footer from '~/components/structure/Footer.vue'
 import Header from '~/components/structure/Header.vue'
 import About from '~/components/top/About.vue'
@@ -18,7 +17,6 @@ import Project from '~/components/top/Project.vue'
 
 export default {
   components: {
-    Button,
     Footer,
     Header,
     About,
@@ -29,7 +27,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.component {
-  /* test */
+.main {
+  padding: 0 4%;
+  margin: 0 auto;
+  @include mq {
+    max-width: 1040px;
+    padding: 0 40px;
+  }
 }
 </style>
