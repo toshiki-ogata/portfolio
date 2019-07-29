@@ -36,7 +36,15 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/eslint-module', '@nuxtjs/style-resources'],
+  modules: ['@nuxtjs/eslint-module', '@nuxtjs/style-resources', 'nuxt-fontawesome'],
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-brands-svg-icons',
+        icons: ['fab']
+      }
+    ]
+  },
   /*
    ** Build configuration
    */
