@@ -45,7 +45,7 @@
     "nodemon": "^1.18.9",
     "nuxt-fontawesome": "^0.4.0",
     "prettier": "^1.16.4",
-    "pug": "^2.0.4",
+    "pug": "^3.0.1",
     "pug-lint-vue": "^0.3.0",
     "pug-plain-loader": "^1.0.0",
     "sass-loader": "^7.1.0",
